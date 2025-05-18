@@ -3,10 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebAPI.Controllers
 {
     [ApiController]
-
     [Route("api/[controller]")]
     public class CalculatorController : ControllerBase
-
     {
         [HttpGet("add")]
         public IActionResult Add(decimal a, decimal b)
@@ -39,11 +37,9 @@ namespace MyWebAPI.Controllers
         }
         
         [HttpGet("sum")]
-
         public IActionResult Debt(decimal a, decimal b,  decimal c)
         {
             return Ok(a + b + c);
         }
-
     }
 }
